@@ -13,6 +13,14 @@
 		4088A09228731E6E001298C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4088A09028731E6E001298C6 /* Main.storyboard */; };
 		4088A09428731E6F001298C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4088A09328731E6F001298C6 /* Assets.xcassets */; };
 		4088A09728731E6F001298C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4088A09528731E6F001298C6 /* LaunchScreen.storyboard */; };
+		4088A0AD28731F0F001298C6 /* TimerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0A028731F0F001298C6 /* TimerEntity.swift */; };
+		4088A0AE28731F0F001298C6 /* TimerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0A228731F0F001298C6 /* TimerAssembly.swift */; };
+		4088A0AF28731F0F001298C6 /* TimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0A428731F0F001298C6 /* TimerPresenter.swift */; };
+		4088A0B028731F0F001298C6 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0A628731F0F001298C6 /* CircularProgressBarView.swift */; };
+		4088A0B128731F0F001298C6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0A728731F0F001298C6 /* TimerView.swift */; };
+		4088A0B228731F0F001298C6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0A828731F0F001298C6 /* TimerViewController.swift */; };
+		4088A0B328731F0F001298C6 /* TimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0AA28731F0F001298C6 /* TimerInteractor.swift */; };
+		4088A0B428731F0F001298C6 /* TimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0AC28731F0F001298C6 /* TimerRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		4088A09328731E6F001298C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4088A09628731E6F001298C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4088A09828731E6F001298C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4088A0A028731F0F001298C6 /* TimerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEntity.swift; sourceTree = "<group>"; };
+		4088A0A228731F0F001298C6 /* TimerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerAssembly.swift; sourceTree = "<group>"; };
+		4088A0A428731F0F001298C6 /* TimerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerPresenter.swift; sourceTree = "<group>"; };
+		4088A0A628731F0F001298C6 /* CircularProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
+		4088A0A728731F0F001298C6 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		4088A0A828731F0F001298C6 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		4088A0AA28731F0F001298C6 /* TimerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerInteractor.swift; sourceTree = "<group>"; };
+		4088A0AC28731F0F001298C6 /* TimerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		4088A08928731E6E001298C6 /* Pomodoro-App-Viper */ = {
 			isa = PBXGroup;
 			children = (
+				4088A09E28731F0F001298C6 /* Timer */,
 				4088A08A28731E6E001298C6 /* AppDelegate.swift */,
 				4088A08C28731E6E001298C6 /* SceneDelegate.swift */,
 				4088A08E28731E6E001298C6 /* ViewController.swift */,
@@ -65,6 +82,69 @@
 				4088A09828731E6F001298C6 /* Info.plist */,
 			);
 			path = "Pomodoro-App-Viper";
+			sourceTree = "<group>";
+		};
+		4088A09E28731F0F001298C6 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				4088A09F28731F0F001298C6 /* Entity */,
+				4088A0A128731F0F001298C6 /* Assembly */,
+				4088A0A328731F0F001298C6 /* Presenter */,
+				4088A0A528731F0F001298C6 /* View */,
+				4088A0A928731F0F001298C6 /* Interactor */,
+				4088A0AB28731F0F001298C6 /* Router */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		4088A09F28731F0F001298C6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0A028731F0F001298C6 /* TimerEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4088A0A128731F0F001298C6 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0A228731F0F001298C6 /* TimerAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		4088A0A328731F0F001298C6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0A428731F0F001298C6 /* TimerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4088A0A528731F0F001298C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0A628731F0F001298C6 /* CircularProgressBarView.swift */,
+				4088A0A728731F0F001298C6 /* TimerView.swift */,
+				4088A0A828731F0F001298C6 /* TimerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4088A0A928731F0F001298C6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0AA28731F0F001298C6 /* TimerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4088A0AB28731F0F001298C6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0AC28731F0F001298C6 /* TimerRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +218,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4088A0B028731F0F001298C6 /* CircularProgressBarView.swift in Sources */,
+				4088A0B228731F0F001298C6 /* TimerViewController.swift in Sources */,
 				4088A08F28731E6E001298C6 /* ViewController.swift in Sources */,
+				4088A0AE28731F0F001298C6 /* TimerAssembly.swift in Sources */,
+				4088A0AF28731F0F001298C6 /* TimerPresenter.swift in Sources */,
 				4088A08B28731E6E001298C6 /* AppDelegate.swift in Sources */,
+				4088A0B328731F0F001298C6 /* TimerInteractor.swift in Sources */,
+				4088A0AD28731F0F001298C6 /* TimerEntity.swift in Sources */,
+				4088A0B428731F0F001298C6 /* TimerRouter.swift in Sources */,
+				4088A0B128731F0F001298C6 /* TimerView.swift in Sources */,
 				4088A08D28731E6E001298C6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

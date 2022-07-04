@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		4088A08B28731E6E001298C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A08A28731E6E001298C6 /* AppDelegate.swift */; };
 		4088A08D28731E6E001298C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A08C28731E6E001298C6 /* SceneDelegate.swift */; };
-		4088A08F28731E6E001298C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A08E28731E6E001298C6 /* ViewController.swift */; };
-		4088A09228731E6E001298C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4088A09028731E6E001298C6 /* Main.storyboard */; };
 		4088A09428731E6F001298C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4088A09328731E6F001298C6 /* Assets.xcassets */; };
 		4088A09728731E6F001298C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4088A09528731E6F001298C6 /* LaunchScreen.storyboard */; };
 		4088A0AD28731F0F001298C6 /* TimerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0A028731F0F001298C6 /* TimerEntity.swift */; };
@@ -34,8 +32,6 @@
 		4088A08728731E6E001298C6 /* Pomodoro-App-Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro-App-Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4088A08A28731E6E001298C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4088A08C28731E6E001298C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4088A08E28731E6E001298C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4088A09128731E6E001298C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4088A09328731E6F001298C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4088A09628731E6F001298C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4088A09828731E6F001298C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,15 +82,8 @@
 		4088A08928731E6E001298C6 /* Pomodoro-App-Viper */ = {
 			isa = PBXGroup;
 			children = (
-				4088A09E28731F0F001298C6 /* Timer */,
-				4088A0B528731FE7001298C6 /* Settings */,
-				4088A08A28731E6E001298C6 /* AppDelegate.swift */,
-				4088A08C28731E6E001298C6 /* SceneDelegate.swift */,
-				4088A08E28731E6E001298C6 /* ViewController.swift */,
-				4088A09028731E6E001298C6 /* Main.storyboard */,
-				4088A09328731E6F001298C6 /* Assets.xcassets */,
-				4088A09528731E6F001298C6 /* LaunchScreen.storyboard */,
-				4088A09828731E6F001298C6 /* Info.plist */,
+				4088A0CB28732099001298C6 /* Sources */,
+				4088A0CA28732060001298C6 /* Resources */,
 			);
 			path = "Pomodoro-App-Viper";
 			sourceTree = "<group>";
@@ -224,6 +213,35 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		4088A0CA28732060001298C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4088A09328731E6F001298C6 /* Assets.xcassets */,
+				4088A09528731E6F001298C6 /* LaunchScreen.storyboard */,
+				4088A09828731E6F001298C6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4088A0CB28732099001298C6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4088A09E28731F0F001298C6 /* Timer */,
+				4088A0B528731FE7001298C6 /* Settings */,
+				4088A0CC287320A2001298C6 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4088A0CC287320A2001298C6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4088A08A28731E6E001298C6 /* AppDelegate.swift */,
+				4088A08C28731E6E001298C6 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,7 +302,6 @@
 			files = (
 				4088A09728731E6F001298C6 /* LaunchScreen.storyboard in Resources */,
 				4088A09428731E6F001298C6 /* Assets.xcassets in Resources */,
-				4088A09228731E6E001298C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +314,6 @@
 			files = (
 				4088A0B028731F0F001298C6 /* CircularProgressBarView.swift in Sources */,
 				4088A0B228731F0F001298C6 /* TimerViewController.swift in Sources */,
-				4088A08F28731E6E001298C6 /* ViewController.swift in Sources */,
 				4088A0C928731FE7001298C6 /* SettingsRouter.swift in Sources */,
 				4088A0C428731FE7001298C6 /* AssemblySettings.swift in Sources */,
 				4088A0AE28731F0F001298C6 /* TimerAssembly.swift in Sources */,
@@ -319,14 +335,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4088A09028731E6E001298C6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4088A09128731E6E001298C6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4088A09528731E6F001298C6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -463,10 +471,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 636TS9JX4X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Pomodoro-App-Viper/Info.plist";
+				INFOPLIST_FILE = "Pomodoro-App-Viper/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,10 +498,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 636TS9JX4X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Pomodoro-App-Viper/Info.plist";
+				INFOPLIST_FILE = "Pomodoro-App-Viper/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

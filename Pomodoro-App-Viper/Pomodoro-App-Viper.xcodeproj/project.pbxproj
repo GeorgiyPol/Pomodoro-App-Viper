@@ -21,6 +21,13 @@
 		4088A0B228731F0F001298C6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0A828731F0F001298C6 /* TimerViewController.swift */; };
 		4088A0B328731F0F001298C6 /* TimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0AA28731F0F001298C6 /* TimerInteractor.swift */; };
 		4088A0B428731F0F001298C6 /* TimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0AC28731F0F001298C6 /* TimerRouter.swift */; };
+		4088A0C328731FE7001298C6 /* SettingsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0B728731FE7001298C6 /* SettingsEntity.swift */; };
+		4088A0C428731FE7001298C6 /* AssemblySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0B928731FE7001298C6 /* AssemblySettings.swift */; };
+		4088A0C528731FE7001298C6 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0BB28731FE7001298C6 /* SettingsPresenter.swift */; };
+		4088A0C628731FE7001298C6 /* SelectedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0BD28731FE7001298C6 /* SelectedButton.swift */; };
+		4088A0C728731FE7001298C6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0BE28731FE7001298C6 /* SettingsViewController.swift */; };
+		4088A0C828731FE7001298C6 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0C028731FE7001298C6 /* SettingsInteractor.swift */; };
+		4088A0C928731FE7001298C6 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088A0C228731FE7001298C6 /* SettingsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +47,13 @@
 		4088A0A828731F0F001298C6 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		4088A0AA28731F0F001298C6 /* TimerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerInteractor.swift; sourceTree = "<group>"; };
 		4088A0AC28731F0F001298C6 /* TimerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerRouter.swift; sourceTree = "<group>"; };
+		4088A0B728731FE7001298C6 /* SettingsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsEntity.swift; sourceTree = "<group>"; };
+		4088A0B928731FE7001298C6 /* AssemblySettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblySettings.swift; sourceTree = "<group>"; };
+		4088A0BB28731FE7001298C6 /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		4088A0BD28731FE7001298C6 /* SelectedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedButton.swift; sourceTree = "<group>"; };
+		4088A0BE28731FE7001298C6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4088A0C028731FE7001298C6 /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		4088A0C228731FE7001298C6 /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				4088A09E28731F0F001298C6 /* Timer */,
+				4088A0B528731FE7001298C6 /* Settings */,
 				4088A08A28731E6E001298C6 /* AppDelegate.swift */,
 				4088A08C28731E6E001298C6 /* SceneDelegate.swift */,
 				4088A08E28731E6E001298C6 /* ViewController.swift */,
@@ -143,6 +158,68 @@
 			isa = PBXGroup;
 			children = (
 				4088A0AC28731F0F001298C6 /* TimerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4088A0B528731FE7001298C6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0B628731FE7001298C6 /* Entity */,
+				4088A0B828731FE7001298C6 /* Assembly */,
+				4088A0BA28731FE7001298C6 /* Presenter */,
+				4088A0BC28731FE7001298C6 /* View */,
+				4088A0BF28731FE7001298C6 /* Interactor */,
+				4088A0C128731FE7001298C6 /* Router */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4088A0B628731FE7001298C6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0B728731FE7001298C6 /* SettingsEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4088A0B828731FE7001298C6 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0B928731FE7001298C6 /* AssemblySettings.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		4088A0BA28731FE7001298C6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0BB28731FE7001298C6 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4088A0BC28731FE7001298C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0BD28731FE7001298C6 /* SelectedButton.swift */,
+				4088A0BE28731FE7001298C6 /* SettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4088A0BF28731FE7001298C6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0C028731FE7001298C6 /* SettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4088A0C128731FE7001298C6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4088A0C228731FE7001298C6 /* SettingsRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -221,14 +298,21 @@
 				4088A0B028731F0F001298C6 /* CircularProgressBarView.swift in Sources */,
 				4088A0B228731F0F001298C6 /* TimerViewController.swift in Sources */,
 				4088A08F28731E6E001298C6 /* ViewController.swift in Sources */,
+				4088A0C928731FE7001298C6 /* SettingsRouter.swift in Sources */,
+				4088A0C428731FE7001298C6 /* AssemblySettings.swift in Sources */,
 				4088A0AE28731F0F001298C6 /* TimerAssembly.swift in Sources */,
 				4088A0AF28731F0F001298C6 /* TimerPresenter.swift in Sources */,
+				4088A0C328731FE7001298C6 /* SettingsEntity.swift in Sources */,
+				4088A0C728731FE7001298C6 /* SettingsViewController.swift in Sources */,
 				4088A08B28731E6E001298C6 /* AppDelegate.swift in Sources */,
 				4088A0B328731F0F001298C6 /* TimerInteractor.swift in Sources */,
 				4088A0AD28731F0F001298C6 /* TimerEntity.swift in Sources */,
+				4088A0C628731FE7001298C6 /* SelectedButton.swift in Sources */,
 				4088A0B428731F0F001298C6 /* TimerRouter.swift in Sources */,
+				4088A0C828731FE7001298C6 /* SettingsInteractor.swift in Sources */,
 				4088A0B128731F0F001298C6 /* TimerView.swift in Sources */,
 				4088A08D28731E6E001298C6 /* SceneDelegate.swift in Sources */,
+				4088A0C528731FE7001298C6 /* SettingsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
